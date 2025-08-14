@@ -1,5 +1,5 @@
 # 🌐 Welcome to Frontend Road 🚀
-_A beginner-friendly frontend development guide for people who “don’t get it” (yet)_
+_A beginner-friendly frontend development guide for people stupid like me_
 
 Reference: [roadmap.sh/frontend](https://roadmap.sh/frontend)  
 
@@ -32,7 +32,7 @@ It’s a way for the client (your browser) and the server (where a website lives
 ---
 
 <details>
-<summary>3️ What is DNS?</summary>
+<summary>3 What is DNS?</summary>
 
 **DNS** → **Domain Name System**  
 The internet’s phonebook. It translates human-friendly website names (like `google.com`) into machine-friendly IP addresses (like `142.250.190.78`).  
@@ -47,7 +47,7 @@ Think of it like a game username + tag combo:
 ---
 
 <details>
-<summary>4️ What is Hosting?</summary>
+<summary>4 What is Hosting?</summary>
 
 There are 3 main types of hosting:  
 
