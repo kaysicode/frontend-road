@@ -1,21 +1,80 @@
-# WELCOME TO FRONTEND ROAD
-### A Frontend Development Road solely purpose for stupid people like me
+# 🌐 Welcome to Frontend Road 🚀
+_A beginner-friendly frontend development guide for people who “don’t get it” (yet)_
 
-Reference at [roadmap](https://roadmap.sh/frontend)
+Reference: [roadmap.sh/frontend](https://roadmap.sh/frontend)  
 
-## Objective
-1. How does the Internet Work?
+---
+
+## 🎯 Objective  
+This is my personal journey in understanding the basics of frontend development — explained in simple words and with relatable analogies.  
+
+---
+
+## 📖 Topics  
+
+<details>
+<summary>1 How does the Internet Work?</summary>
+
 ![Basic Analogy of Internet](imgs/Analogy-of-Internet.png)
-2. What is **HTTP**? <br>
-**HyperText Transfer Protocol** also known as **HTTP**, it's a way for client and server to talk to each other in the internet
-3. What is **DNS**? <br>
-**Domain Name System** is like a phonebook for the URL or Numeric IP address of the website, <br>
-think of it like an username and a tag name in the game. Username is what players usually see when looking at your avatar while, <br>
-tag name is like the permanent name that solely only for you. 
-4. What is hosting?
-5. DNS and how it works?
-6. Browsers and how they work?
 
-## Topic
-1. HTML
+</details>
 
+---
+
+<details>
+<summary>2️ What is HTTP?</summary>
+
+**HTTP** → **HyperText Transfer Protocol**  
+It’s a way for the client (your browser) and the server (where a website lives) to talk to each other over the internet.
+
+</details>
+
+---
+
+<details>
+<summary>3️ What is DNS?</summary>
+
+**DNS** → **Domain Name System**  
+The internet’s phonebook. It translates human-friendly website names (like `google.com`) into machine-friendly IP addresses (like `142.250.190.78`).  
+
+**Analogy:**  
+Think of it like a game username + tag combo:  
+- **Username** → what other players see  
+- **Tag** → the unique ID just for you  
+
+</details>
+
+---
+
+<details>
+<summary>4️ What is Hosting?</summary>
+
+There are 3 main types of hosting:  
+
+| Hosting Type         | Analogy                     | Pros                                           | Cons                                             |
+|----------------------|-----------------------------|------------------------------------------------|--------------------------------------------------|
+| **Shared Hosting**   | 🏢 Apartment with roommates  | Cheapest, easy setup for small sites           | Limited resources, can be slow                   |
+| **VPS Hosting**      | 🏙 Condo in a big building   | Guaranteed resources, more control             | Costs more, may waste unused resources           |
+| **Dedicated Hosting**| 🏠 Your own house            | Full control, all resources are yours          | Very expensive                                   |
+
+</details>
+
+---
+
+<details>
+<summary>5 Browsers and How They Work</summary>
+
+🎥 Watch this video for a great explanation → *[How Web Browsers Work](https://www.youtube.com/watch?v=EoYkl8rwbiM)*
+
+</details>
+
+---
+
+## 📚 Topic List  
+- [ ] HTML  
+- [ ] CSS  
+- [ ] JavaScript  
+
+---
+
+💡 _Note: This README will keep evolving as I learn more._
