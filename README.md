@@ -71,10 +71,14 @@ There are 3 main types of hosting:
 ---
 
 ## 📚 Topic List  
-- [ ] HTML  
+- HTML ![HTML-Logo](imgs/html-5.png)
+<br>Check the google docs to learn basics, elements, semantics and more
+<br>[HTML_Tutorial-Beginners](https://docs.google.com/document/d/1s4UkgYkb6zD1DOrv0PxrEoXAbaqkIgSdGCZ57Ko5U8k/edit?usp=sharing)
 - [ ] CSS  
 - [ ] JavaScript  
 
 ---
+
+## 📂 Projects
 
 💡 _Note: This README will keep evolving as I learn more._
