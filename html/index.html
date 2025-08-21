@@ -1,29 +1,94 @@
 <!DOCTYPE html>
-<html lang ="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="author" content="Ceorl The Cat">
-        <meta name="description" content="This page contains all
-        the things I am learning how to create as I learn HTML.">
-        <title>My First Web Page</title>
-    </head>
-    <body>
-        <!--Text Basic-->
-        <h1>Hello World!</h1>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Ceorl The Cat" />
+    <meta
+      name="description"
+      content="This page contains all
+        the things I am learning how to create as I learn HTML."
+    />
+    <title>My First Web Page</title>
+    <link rel="Icon" href="/imgs/html-5.png" type="image/x-icon" />
+    <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+    <!--Text Basic-->
+    <h1 id="TOP">My Goals for the Year</h1>
+    <hr />
 
-        <hr>
+    <nav>
+        <ul>
+            <li>
+                <a href="#html">Learning HTML</a>
+            </li>
+            <li>
+                <a href="#vacation">Planning a Vacation</a>
+            </li>
+        </ul>
+    </nav>
 
-        <h2>Hello World!</h2>
-        <p>This is my first web page.
-            <br>...I learn more about web dev.
-            <br>...I plan out my schedule.
-            <br>...I use resource from MDN.
-        </p>
+    <hr />
+    <section>
+      <h2>Hello World!</h2>
+      <p>This is my first web page.</p>
 
-        <h3>My Daily Schedule</h3>
-        <p>Let me tell you how I...</p>
+      <h3>My Daily Schedule</h3>
+      <p>Let me tell you how I...</p>
+      <ol>
+        <li>...I learn more about web dev.</li>
+        <li>...I plan out my schedule.</li>
+        <li>
+          ...I use resource from,
+          <abbr title="Mozilla Developer Network">
+            <a href="https://developer.mozilla.org/">MDN</a></abbr
+          >.
+        </li>
+      </ol>
+    </section>
 
-        <hr>
+    <hr />
+    <section id="vacation">
+      <h2>I Am Also Planning a Vacation</h2>
+      <p>I've been working hard and <em>really need a gataway.</em></p>
+      <p>
+        I live in <abbr title="Philippines">PH</abbr> so I want visit a beach.
+      </p>
 
-    </body>
+      <h3>Place I'd like to Visit</h3>
+      <ul>
+        <li>
+          <p>I've heard good things about the Boracay Beach lately.</p>
+        </li>
+        <li>
+          <p>I've heard good things about going here</p>
+        </li>
+        <li>
+          <address>
+            Bale mi Boracay, Bulabog Beach, <br />
+            Boracay Island, Malay Aklan, <br />
+            Philippines 5608<br />
+          </address>
+        </li>
+      </ul>
+
+      <h3>Places I'd like to Avoid</h3>
+      <dl>
+        <dt>New York City</dt>
+        <dd>I hear this is <strong>crowded</strong>!</dd>
+
+        <dt>Tondo Manila</dt>
+        <dd>I heard this place is dangerous.</dd>
+
+        <dt>Quezon City</dt>
+        <dd>This is also crowded.</dd>
+      </dl>
+    </section>
+
+    <hr />
+    &lt;&lt;&lt; &copy; <a href="about.html">Kaysi Code</a> &gt;&gt;&gt;
+    <p>
+        <a href="#">Back to the TOP</a>
+    </p>
+  </body>
 </html>

@@ -1,0 +1,15 @@
+html {
+    font-size:22px;
+}
+
+a {
+    color:cadetblue
+}
+
+a:visited {
+    color:rgb(53, 90, 91)
+}
+
+a:hover, a:active {
+    color: rgb(169, 252, 255)
+}
