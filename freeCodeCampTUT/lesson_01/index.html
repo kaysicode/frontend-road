@@ -7,15 +7,46 @@
   <meta name="description" content="This page contains all
         the things I am learning how to create as I learn HTML." />
   <title>My First Web Page</title>
-  <link rel="Icon" href="/imgs/html-5.png" type="image/x-icon" />
+  <link rel="Icon" href="imgs/html-5.png" type="image/x-icon" />
   <link rel="stylesheet" href="main.css">
 </head>
+
+<!--Lesson 01: Images-->
+
+ <!--
+  CUMULATIVE RELATIVE
+  - A practice that widht and height attributes should always in img element. 
+  This practice is for website that has pop up ads, 
+  -->
+
+  <!--
+  LOADING attributes 
+  - in img element, it loads an image based on the value
+  1. EDGER = the image will immediately load when the webpage loaded
+  2. LAZY = The image will load when it reach a specific range
+  -->
+
+  <!--
+  FIGURE element 
+  - it will nest the img element to make a figure to use a caption
+  FIGCAPTION element 
+  = in within the figure element, it will make a small indentation 
+    below the image, to make a caption, it's like paragraph but, has small indentation
+  -->
+
+  <!--
+  CODE element
+  - make a code block example that can be nested by figure element
+  -->
+
+
 
 <body>
   <!--Text Basic-->
   <h1 id="TOP">My Goals for the Year</h1>
-  <hr />
+  <hr /> <!-- This is a horizontal line -->
 
+  <!--Semantic-->
   <nav>
     <ul>
       <li>
@@ -31,6 +62,15 @@
   <section>
     <h2>Hello World!</h2>
     <p>This is my first web page.</p>
+    <!--Adding width and height as an attribute is a good practice since threre's called
+    a cumulative layout  -->
+    <img src="imgs/html5_biglogo.png" alt="HTML5 Logo" title="Big HTML5 Logo" width="300" height="300">
+    <figure>
+      <figcaption>An Example of HTML5 code</figcaption>
+      <p>
+        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code>
+      </p>
+    </figure>
 
     <h3>My Daily Schedule</h3>
     <p>Let me tell you how I...</p>
@@ -45,14 +85,24 @@
   </section>
 
   <hr />
+
   <section id="vacation">
     <h2>I Am Also Planning a Vacation</h2>
     <p>I've been working hard and <em>really need a gataway.</em></p>
     <p>I live in <abbr title="Philippines">PH</abbr> so I want visit a beach.</p>
+
     <h3>Place I'd like to Visit</h3>
     <ul>
       <li>
         <p>I've heard good things about the Boracay Beach lately.</p>
+
+        <figure>
+          <img src="imgs/boracay.jpg" alt="Boracay JPG" title="Boracay Beach" width="420" height="250" loading="lazy">
+          <figcaption>
+            Boracay Beach Getaway
+          </figcaption>
+        </figure>
+
       </li>
       <li>
         <p>I've heard good things about going here</p>
@@ -63,6 +113,13 @@
           Boracay Island, Malay Aklan, <br />
           Philippines 5608<br />
         </address>
+        <figure>
+          <img src="imgs/frogo.jpg" alt="Frogo Pic" title="Froggo is in Boracay Beach" width="250" height="200"
+            loading="lazy">
+          <figcaption>
+            The Froggo is sad because he don't want to go in Boracay Beach.
+          </figcaption>
+        </figure>
       </li>
     </ul>
 
