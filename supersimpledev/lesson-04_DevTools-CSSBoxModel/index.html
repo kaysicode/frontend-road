@@ -1,0 +1,63 @@
+<!--
+LESSON 04: DEVTOOLS & CSS BOX MODEL
+-> This is a simple HTML document to demonstrate how to use browser developer tools (DevTools) to inspect and modify the CSS box model of HTML elements.
+-> in DEVTOOLS:
+    - Right-click on the button element in the browser and select "Inspect" to open DevTools.
+    - In the "Elements" panel, select the button element to view its CSS styles and box model properties.
+    - You can also code within the DevTools "Styles" tab to see how changes affect the element in real-time.
+-> you can also convert hex color values to rgb or rgba values using an online converter like https: 
+https://www.rapidtables.com/convert/color/hex-to-rgb.html
+-> CSS BOX MODEL:
+    - Content: The actual content of the element (text, image, etc.)
+    - Padding: The space between the content and the border.
+    - Border: The border surrounding the padding (if any).
+    - Margin: The space outside the border, separating the element from other elements.
+    - you can access the CSS BOX MODEL in the DEVTOOLS by clicking on the "Computed" tab and scrolling down to the "Box Model" section.
+EXERCISE:
+    - Make a pagination
+    - Make a button that stretch when it is hovered over.
+    - Make a button that has a shadow and when it's hovered over, the shadow gone (3d Click effect)
+    - margin and padding together, make a button that has a margin and padding
+    - Make a button that has a border and when it's hovered over, the border width increase
+-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <button class="subscribe-button">Subscribe</button>
+    <button class="join-button">Join</button>
+    <button class="tweet-button">Tweet</button>
+
+
+    <!--OWN EXERCISE-->
+    <div class ="hex-to-rgb-calculator-container">
+        <h2>Hex to RGB Calculator</h2>
+        <p>This button will lead you to the website of rapidtables that you can convert your hex values of specific
+            color into rgb values.
+        </p>
+        <h4>click the button!</h4>
+        <a class="go-to-converter-button" href="https://www.rapidtables.com/convert/color/hex-to-rgb.html"
+            target="_blank"> Go to Converter!
+        </a>
+    </div>
+
+    <!--EXERCOSE-->
+    <div class="pagination-container">
+        <button class="back-button">&lt; Back</button>
+        <a class="page-numbers" href="">1</a>
+        <a class="page-numbers" href="">2</a>
+        <a class="page-numbers" href="">3</a>
+        <a class="page-numbers" href="">4</a>
+        <a class="page-numbers" href="">5</a>
+        <button class="next-button">Next &gt;</button>
+    </div>
+
+
+</body>
+
+</html>
