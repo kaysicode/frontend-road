@@ -8,6 +8,9 @@ PROPERTIES, ATTRIBUTES, UNITS, PSEUDO, AND MORE LEARNED:
     - note: if you use border-radius, the padding will be affected. By 1 px of border-radius. By 1 px;
             that's why always minus 1 px from the padding when using border-radius.
 -> margin = property creates space outside the element, between the border and other elements.
+-> display:flex = makes the container a flex container, allowing for flexible layouts of its children.
+    - justify-content = property aligns the children horizontally within the flex container. 
+    - align-items = property aligns the children vertically within the flex container.
 
 */
 
