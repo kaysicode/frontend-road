@@ -1,0 +1,287 @@
+<!--
+LESSON 3: HOVERS, TRANSITIONS, SHADOWS
+-> This is a simple HTML document to demonstrate how to create buttons with different styles using CSS.
+-> This file will teach you how to use CSS pseudo-classes like :hover to change the style of buttons when the user hovers over them with the mouse.
+-> This file will also teach you how to make a hovers, transitions, and shadows
+ EXERCISE: 
+    - Create a oapcity hover effect for the "REQUEST" button.
+    - Change the background color of the "Add to Cart" button when hovered.
+    - Create a shadow effect for the "Sign up" button when hovered.
+    - Change the background color and text colof of the "Get started" and "Download" buttons when hovered.
+    - Change the background color and the border width of the "Apply on company website" and "Save" buttons when hovered.
+
+THINGS LEARNED:
+    - CSS Pseudo classes (like :hover, :active)
+    - transitions attributes should be in the main css class, not in the hover pseudo class
+    - the syntax and arguments/value for the transition attribute is;
+        transition: [<property>] [<duration>];
+        e.g. transition: background-color 0.15s, color 0.15s, border 0.15s;
+    - the syntax and arguments/value for the box-shadow property is;
+        box-shadow: [x-offset] [y-offset] [blur-radius] [color];
+        e.g. box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+        (the rgba color value is red, green, blue, alpha (opacity))
+-->
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .subscribe-button {
+            background-color: rgb(200, 0, 0);
+            /*text color of the button*/
+            color: white;
+            /*removes the default border of the button*/
+            border: none;
+            /*height of the button*/
+            height: 36px;
+            /*width of the button*/
+            width: 120px;
+            /*rounded corners*/
+            border-radius: 2px;
+            /*makes the cursor a pointer (hand) when hovering over the button*/
+            cursor: pointer;
+            /*adds space to the right of the button*/
+            margin-right: 8px;
+            /*the transition attributes make a smooth transition for the hover psuedo class*/
+            transition: opacity 0.15s;
+
+
+        }
+
+        .subscribe-button:hover {
+            /*The hover is a pseudo class*/
+            /*background-color: green;*/
+
+            /*makes the button slightly transparent (fade) when hovered over*/
+            opacity: 0.7;
+
+        }
+
+        .subscribe-button:active {
+            /*The hover is a pseudo class*/
+            /*background-color: blue;*/
+            opacity: 0.5;
+        }
+
+        .join-button {
+            background-color: transparent;
+            color: #2188b8;
+            border-color: #2188b8;
+            border: 1px solid;
+            /*adds a border with 1px thickness and solid style*/
+            height: 36px;
+            width: 62px;
+            border-radius: 2px;
+            cursor: pointer;
+            margin-right: 8px;
+            /*adds space to the right of the button*/
+
+            transition: background-color 0.15s, color 0.15s;
+            /*the transition attributes make a smooth transition for the hover psuedo class*/
+        }
+
+        .join-button:hover {
+            background-color: #2188b8;
+            color: white;
+
+        }
+
+        .join-button:active {
+            opacity: 0.7;
+        }
+
+        .tweet-button {
+            background-color: #1d9ae8;
+            font-weight: bold;
+            color: white;
+            border: none;
+            height: 36px;
+            width: 80px;
+            border-radius: 18px;
+            cursor: pointer;
+            font-size: 15px;
+            transition: box-shadow 0.15s;
+        }
+
+        .tweet-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+            /*x-offset, y-offset, blur-radius, color*/
+            /*the box-shadow property adds a shadow to the button when hovered over*/
+        }
+
+        /*EXERCISES*/
+
+        .text {
+            font-family: "Arial", "sans-serif";
+            font-size: 30px;
+            margin-top: 50px;
+        }
+
+        /*UBER*/
+
+        .request-button {
+            border: none;
+            background-color: black;
+            color: white;
+            height: 36px;
+            width: 110px;
+            border-radius: 2px;
+            cursor: pointer;
+            transition: opacity 0.15s;
+        }
+
+        .request-button:hover {
+            opacity: 0.7;
+        }
+
+        /*AMAZON*/
+
+        .add-to-cart-button {
+            border: none;
+            background-color: rgb(255, 216, 20);
+            height: 30px;
+            width: 150px;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background-color 0.15s;
+        }
+
+        .add-to-cart-button:hover {
+            background-color: rgb(255, 226, 80);
+        }
+
+        /*GITHUB*/
+
+        .sign-up-button {
+            border: none;
+            background-color: rgb(46, 164, 79);
+            color: white;
+            height: 33px;
+            width: 85px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: box-shadow 0.15s;
+        }
+
+        .sign-up-button:hover {
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15)
+        }
+
+        /*BOOTSTRAP*/
+
+        .get-started-button {
+            border: 1px solid white;
+            background-color: rgb(121, 82, 179);
+            color: white;
+            height: 35px;
+            width: 110px;
+            border-radius: 3px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: background-color 0.15s, color 0.15s, border 0.15s; 
+        }
+
+        .get-started-button:hover {
+            background-color: white;
+            color: rgb(121, 82, 179);
+            border: 1px solid rgb(121, 82, 179);
+        }
+
+        .download-button {
+            border: none;
+            color: rgb(108, 117, 125);
+            background-color: transparent;
+            border: 1px solid rgb(108, 117, 125);
+            height: 35px;
+            width: 110px;
+            border-radius: 3px;
+            cursor: pointer;
+            transition: background-color 0,15s, color 0,15s, border 0.15s;
+        }
+
+        .download-button:hover {
+            background-color: rgb(108, 117, 125);
+            color: white;
+            border: 1px solid white;
+        }
+
+        /*LINKEDIN*/
+
+        .apply-button {
+            border: none;
+            background-color: rgb(10, 102, 194);
+            color: white;
+            height: 38px;
+            width: 200px;
+            border-radius: 17.5px;
+            cursor: pointer;
+            margin-right: 8px;
+            transition: background-color 0.15s, color 0.15s, border 0.15s, width 0.15s, height 0.15s;
+        }
+
+        .apply-button:hover {
+            background-color: white;
+            color: rgb(10, 102, 194);
+            border: 1px solid rgb(10, 102, 194);
+            width: 180px;
+            height: 28px;
+        }
+
+        .save-button {
+            border: none;
+            background-color: transparent;
+            color: rgb(10, 102, 194);
+            border: 1px solid rgb(10, 102, 194);
+            height: 38px;
+            width: 80px;
+            border-radius: 17.5px;
+            cursor: pointer;
+            transition: background-color 0.15s, color 0.15s, border 0.15s, width 0.15s, height 0.15s;
+        }
+
+        .save-button:hover {
+            background-color: rgb(10,102, 194);
+            color: white;
+            border: 1px solid white;
+            width: 70px;
+            height: 28px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="subscribe-button">
+        SUBSCRIBE
+    </button>
+
+    <button class="join-button">JOIN</button>
+
+    <button class="tweet-button">Tweet</button>
+
+    <!--EXERCISE 1-->
+    <h2 class="text">UBER</h2>
+    <button class="request-button">Request Now</button>
+
+    <!--EXERCISE 2-->
+    <h2 class="text">Amazon</h2>
+    <button class="add-to-cart-button">Add to Cart</button>
+
+    <!--EXERCISE 3-->
+    <h2 class="text">GitHub</h2>
+    <button class="sign-up-button">Sign up</button>
+
+    <!--EXERCISE 4-->
+    <h2 class="text">Bootstrap</h2>
+    <button class="get-started-button">Get started</button>
+    <button class="download-button">Download</button>
+
+    <!--EXERCISE 5-->
+    <h2 class="text">LinkedIn</h2>
+    <button class="apply-button">Apply on company website</button>
+    <button class="save-button">Save</button>
+</body>
+
+</html>
