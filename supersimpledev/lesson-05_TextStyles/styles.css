@@ -1,0 +1,63 @@
+/*
+PROPERTIES, ATTRIBUTES, UNITS, PSEUDO, AND MORE LEARNED:
+-> font-family (sets the font of the text)
+-> font-size (sets the size of the text)
+-> font-weight (sets the weight of the text, like bold)
+-> font-style (sets the style of the text, like italic)
+-> text-align (sets the alignment of the text, like center)
+-> line-height (sets the height of lines of text)
+
+NOTES:
+-> the font-family has default of Times New Roman.
+-> <p> by default, come with margin at the top and bottom.
+-> CSS SPECIFICATION: 
+  - .[<class-name>] is a selector (e.g. .video-title)
+*/
+
+p {
+  font-family: Arial;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* YOUTUBE EXAMPLES */
+
+.video-title {
+  font-weight: bold;
+  font-size: 18px;
+  width: 280px;
+  line-height: 24px;
+  margin-bottom: 5px;
+}
+
+.video-stats {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 20px;
+}
+
+.video-author {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  margin-bottom: 20px;
+}
+
+.video-description {
+  font-size: 14px;
+  color: rgb(96, 96, 96);
+  width: 280px;
+  line-height: 22px;
+  margin-bottom: 100px;
+}
+
+/* APPLE EXAMPLES */
+
+.apple-text {
+  font-size: 14px;
+  background-color:rgb(227, 65, 64);
+  color: white;
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  text-decoration: underline;
+}
