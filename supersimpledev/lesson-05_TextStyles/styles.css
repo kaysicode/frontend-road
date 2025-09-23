@@ -69,3 +69,128 @@ p {
 .shop-link:hover {
   text-decoration: underline;
 }
+
+/* EXERCISE 1 */
+.exercise-1 {
+  margin-top: 50px;
+  font-weight: bold;
+  font-family: "Tahoma", sans-serif;
+  font-size: 20px;
+}
+
+/* EXERCISE 2 */
+.exercise-2-title {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: "Verdana", "sans, serif";
+  font-size: 18px;
+}
+
+.exercise-2-subtitle {
+  margin-top: 5px;
+  font-family: "Verdana", sans-serif;
+  color: rgb(148, 148, 148);
+  font-size: 15px;
+}
+
+.exercise-2-description {
+  margin-top: 20px;
+  font-family: "Verdana";
+  font-size: 15px;
+  width: 280px;
+}
+
+.exercise-2-button {
+  margin-top: 20px;
+  padding: 7px 12px;
+  border: 1px transparent;
+  border-radius: 5px;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+}
+
+.exercise-2-button:hover {
+  background-color: lightgreen;
+}
+
+
+/* EXERCISE 3 */
+.exercise-3-title {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: Arial;
+  font-size: 25px;
+}
+
+.exercise-3-description {
+  text-align: center;
+  text-decoration: none;
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 18px;
+  font-family: Arial;
+}
+
+.exercise-3-link {
+  color: rgb(0, 98, 255)
+}
+
+.exercise-3-link:hover {
+  text-decoration: underline;
+}
+
+/* EXERCISE 4 */
+.exercise-4-new {
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-family: Arial;
+  font-size: 12px;
+  color: orange;
+}
+
+.exercise-4-macbook {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: Arial;
+  font-size: 18px;
+}
+
+.exercise-4-title {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-family: Arial;
+  font-size: 30px;
+}
+
+.exercise-4-price {
+  text-align: center;
+  margin-top: 8px;
+  margin-bottom: 0;
+  font-weight: normal;
+  font-family: Arial;
+  font-size: 15px;
+}
+
+.exercise-4-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 8px;
+  border: transparent;
+  padding: 5px 10px;
+  border-radius: 20px;
+  color: white;
+  background-color: rgba(28, 28, 255, 0.939);
+  cursor: pointer;
+}
+
+.exercise-4-button:hover {
+  width: 50px;
+  height: 30px;
+  background-color: rgba(28, 28, 255, 0.8);
+}
