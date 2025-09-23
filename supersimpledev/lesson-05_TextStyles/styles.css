@@ -59,5 +59,13 @@ p {
   text-align: center;
   padding-top: 18px;
   padding-bottom: 18px;
+  text-decoration: none;
+}
+
+.shop-link {
+  cursor: pointer;
+}
+
+.shop-link:hover {
   text-decoration: underline;
 }
