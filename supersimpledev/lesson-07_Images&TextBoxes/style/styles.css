@@ -1,0 +1,23 @@
+/*
+-> when changing the width of images, the heights will also follow to keep the same dimension (shapes) of an images
+-> I also notice that, as long as there's only one size changer, one that's not present will follow the dimension to keep its safe 
+(for example)
+    - height is present then, width will follow
+    - width is present then, height will follow
+    - it will lost its shape if you change the both
+
+--> object-fit = a property that's for the images and these are values;
+    - cover = it will cover the area of given dimension (width & height) and it will still keep the shape
+    - contain = it will adjust the images to contain all of the images although it will shrink in the given diemnsion.
+-> object-position = a property that lets you to adjust what area you want to see in the given dimension
+*/
+
+.thumbnail {
+    width: 300px;
+
+}
+
+.searchbar{
+    font-size: 20px;
+    margin-left: 12px;
+}
