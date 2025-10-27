@@ -1,7 +1,16 @@
 <!--
 LESSON 08: CSS Display Property
 -> In this lesson we will learn about the display property in CSS.
+-> Block element is an element that takes up the full width available, with a new line before and after it.
+   example of block elements: <div>, <h1> - <h6>, <p>, <form>, <header>, <footer>, <section>, etc.
 
+-> Inline element only takes up as much width as necessary, and does not start on a new
+   line. example of inline elements: <span>, <a>, <img>, <strong>, <em>, etc.
+
+-> Inline-block element is a hybrid of block and inline elements. It allows setting width and height,
+
+-> we can convert block elements to inline or inline-block, and vice versa using the display property in CSS.
+   example: display: block; display: inline; display: inline-block;
 -->
 
 <!DOCTYPE html>
@@ -9,12 +18,18 @@ LESSON 08: CSS Display Property
 
 <head>
    <title>YouTube.com Clone</title>
-   <link rel="stylesheet" href="style/styles.css">
+   <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-   <img class="thumbnail" src="thumbnails/thumbnail-1.webp" alt="">
    <input class="searchbar" type="textbox" placeholder="Search">
+   <img class="thumbnail" src="../images/thumbnail-1.webp" alt="">
+
+   <p class="video-title">Talking Tech and AI with Google CEO Sundar Pichai!</p>
+   <p class="video-author">Marques Browniee</p>
+   <p class="video-stats">3.4M Views &#183; 6 months ago</p>
+
 
 </body>
+
 </html>
