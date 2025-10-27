@@ -1,0 +1,84 @@
+/* Exercise 7d: search with rounded corner */
+.exercise-7d {
+  width: 120px;
+  padding: 10px;
+  margin-bottom: 50px;
+  color: lightgrey;
+  border: lightgrey 1px solid;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Exercise 7e: Search with a shadpw, and no border */
+.exercise-7e {
+  width: 300px;
+  padding: 10px;
+  border-radius: 20px;
+  border: transparent;
+  box-shadow: 2px 5px 12px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+/* Exercise 7f: LindkedIn Signup */
+h2 {
+  margin-top: 50px;
+  margin-bottom: 0;
+  font-size: 10px;
+  font-family: Arial;
+  color: rgb(122, 122, 122);
+}
+
+.exercise-7f-textbox {
+  width: 240px;
+  height: 20px;
+  margin: 5px 0;
+  border: rgb(122, 122, 122) 1px solid;
+  border-radius: 2px;
+}
+
+p {
+  margin: 10px 0;
+  font-size: 10px;
+  font-family: Arial;
+  color: rgb(122, 122, 122);
+}
+
+.exercise-7f-button {
+    width: 240px;
+    height: 37px;
+    margin-bottom: 50px;
+    background-color: rgb(10, 102, 194);
+    color: white;
+    border: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Exercise 7g: Twitter text box */
+.exercise-7g-image {
+    width: 50px;
+    border-radius: 50%;
+    vertical-align: middle;
+}
+
+.exercise-7g-textbox {
+    height: 20px;
+    vertical-align: middle;
+    border: transparent;
+}
+
+.exercise-7g-textbox::placeholder {
+    color: rgb(122, 122, 122);
+} 
+
+.exercise-7g-button {
+    height: 30px;
+    width: 70px;
+    margin-left: 10px;
+    background-color: rgb(29, 161, 242);
+    color: white;
+    font-weight: 550;;
+    border: transparent;
+    border-radius: 20px;
+    cursor: pointer;
+}
