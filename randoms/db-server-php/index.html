@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DB Server PHP</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>DB Server PHP</h1>
+        <p>This is a placeholder page for the DB Server PHP service.</p>
+        <form action="getproducts.php" method="GET" target="_blank">
+            <input type="hidden" name="view" target="_blank">
+            <p>Device</p>
+            <input type="submit" value="View All of the Device">
+        </form>
+
+         <h1>Add a device to DB</h1>
+        <form action="addProduct.php" method="POST">
+            <p>Enter a device name (e.g. Laptop, Cellphone..)</p>
+            <input type="text" name="deviceName" required>
+            <p>Enter the price</p>
+            <input type="number" name="devicePrice" required>
+            <input type="submit" value="Add a Device">
+        </form>
+    </body>
+</html>

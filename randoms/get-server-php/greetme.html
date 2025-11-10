@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>GET Method</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            gap: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>Form Get Submission</h2>
+    <form action="greetme.php" method="GET" target="_blank">
+        <p>What is your name?</p>
+        <input type="text" name="username" required>
+        <p>What is your favorite color?</p>
+        <input type="text" name="favoritecolor" required>
+        <p><input type="submit" value="Show the color" required></p>
+    </form>
+
+</body>
+
+</html>

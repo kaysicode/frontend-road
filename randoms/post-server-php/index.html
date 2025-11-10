@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>POST</title>
+    <meta charset="UTF-8">
+</head>
+
+<body>
+    <h2>Form Data Submission (POST)</h2>
+    <form action="post.php" target="_blank" method="POST">
+        <p>Designs:
+            <input type="radio" name="designs" id="r1" value="Marvel" required>
+            <label for="r1">Marvel</label>
+            <input type="radio" name="designs" id="r1" value="DC" required>
+            <label for="r2">DC</label>
+        </p>
+
+        <p>Colors:
+            <input type="checkbox" name="color[]" value="Blue"> Blue
+            <input type="checkbox" name="color[]" value="Gray"> Gray
+            <input type="checkbox" name="color[]" value="Black"> Black
+            <input type="checkbox" name="color[]" value="White"> White
+        </p>
+        <p>Customer Name: <input type="text" name="custname" required></p>
+        <input type="submit" value="submit" required>
+    </form>
+
+</body>
+
+</html>

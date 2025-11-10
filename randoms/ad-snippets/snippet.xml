@@ -1,0 +1,11 @@
+<snippet>
+    <content><![CDATA[
+    function ${1:functionName}(${2:params}) {
+        ${3://code here}
+        return $4;
+    }
+    ]]> 
+    </content>
+        <tabTrigger>fun</tabTrigger>
+        <scope>source.js</scope>
+</snippet>
