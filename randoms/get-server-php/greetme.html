@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GET Method</title>
     <style>
         * {
@@ -25,10 +26,15 @@
 <body>
     <h2>Form Get Submission</h2>
     <form action="greetme.php" method="GET" target="_blank">
+
         <p>What is your name?</p>
-        <input type="text" name="username" required>
+        <label for="username">Name:</label>
+        <input type="text" name="username" id="username" required>
+
         <p>What is your favorite color?</p>
-        <input type="text" name="favoritecolor" required>
+        <label for="favoritecolor">Color:</label>
+        <input type="text" name="favoritecolor" id="favoritecolor" required>
+
         <p><input type="submit" value="Show the color" required></p>
     </form>
 

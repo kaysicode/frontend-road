@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>DB Server PHP</title>
         <meta charset="UTF-8">
@@ -16,10 +16,12 @@
 
          <h1>Add a device to DB</h1>
         <form action="addProduct.php" method="POST">
-            <p>Enter a device name (e.g. Laptop, Cellphone..)</p>
-            <input type="text" name="deviceName" required>
-            <p>Enter the price</p>
-            <input type="number" name="devicePrice" required>
+
+            <label for="deviceName">Enter a device name (e.g. Laptop, Cellphone..)</label>
+            <input type="text" name="deviceName" id="deviceName" required>
+
+            <label for="devicePrice">Enter a device price (e.g. 500, 1000..)</label>
+            <input type="number" name="devicePrice" id="devicePrice" required>
             <input type="submit" value="Add a Device">
         </form>
     </body>

@@ -1,30 +1,38 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>POST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
 </head>
 
 <body>
-    <h2>Form Data Submission (POST)</h2>
-    <form action="post.php" target="_blank" method="POST">
-        <p>Designs:
-            <input type="radio" name="designs" id="r1" value="Marvel" required>
-            <label for="r1">Marvel</label>
-            <input type="radio" name="designs" id="r1" value="DC" required>
-            <label for="r2">DC</label>
-        </p>
 
-        <p>Colors:
-            <input type="checkbox" name="color[]" value="Blue"> Blue
-            <input type="checkbox" name="color[]" value="Gray"> Gray
-            <input type="checkbox" name="color[]" value="Black"> Black
-            <input type="checkbox" name="color[]" value="White"> White
+    <h2>Form Data Submission (POST)</h2>
+    <label action="post.php" target="_blank" method="POST">
+
+        <p>Designs:</p>
+        <label for="r1">
+            <input type="radio" name="designs" id="r1" value="Marvel" required>Marvel
+        </label>
+
+        <label for="r2">
+            <input type="radio" name="designs" id="r1" value="DC Universe" required>DC Universe
+        </label>
+
+        <p>Colors:</p>
+        <label><input type="checkbox" name="color[]" value="Blue">Blue</label>
+        <label><input label="form2+" type="checkbox" name="color[]" value="Gray">Gray</label>
+        <label><input type="checkbox" name="color[]" value="Black">Black</label>
+        <label><input type="checkbox" name="color[]" value="White"> White</label>
+
+        <p>
+            <label for="custname">Customer Name:</label>
+            <input type="text" id="custname" name="custname" required>
         </p>
-        <p>Customer Name: <input type="text" name="custname" required></p>
         <input type="submit" value="submit" required>
-    </form>
+        </form>
 
 </body>
 
