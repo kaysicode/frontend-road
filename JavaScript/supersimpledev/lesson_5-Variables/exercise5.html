@@ -1,0 +1,49 @@
+<!-- 
+EXERCISE 5: Cart Quantity HTML and 
+- In this exercise, we will create a simple cart quantity selector using HTML and JavaScript.
+- We will use variables to keep track of the quantity of items in the cart.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Cart Quantity</title>
+</head>
+
+<body>
+    <h2>Cart Quantity</h2>
+    <button class="show-btn" 
+        onclick="console.log(`Cart Quantity: ${quantity}`);">
+    Show Quantity</button>
+
+    <button class="add-btn" 
+        onclick="console.log(`Cart Quantity: ${++quantity}`);">
+    Add to Cart</button>
+
+    <button class="+2-btn" 
+        onclick="
+        quantity=quantity + 2;
+        console.log(`Cart Quantity: ${quantity}`);">
+    +2</button>
+
+    <button class="+3-btn" 
+        onclick="
+        quantity=quantity + 3;
+        console.log(`Cart Quantity: ${quantity}`);">
+    +3</button>
+
+    <button class="reset-btn" 
+        onclick="
+        quantity = 0;
+        console.log(`Cart Quantity: ${quantity}`)">
+    Reset Cart</button>
+</body>
+<script>
+    let quantity = 0;
+
+</script>
+
+</html>
