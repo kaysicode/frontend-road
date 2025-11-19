@@ -1,0 +1,51 @@
+<!-- 
+LESSON 4: HTML & CSS & Console Log
+- In this lesson we will learn basics of HTML & CSS and how to use console.log in JavaScript
+
+LESSON LEARNED:
+- Basic structure of an HTML document
+- Common HTML tags (e.g., headings, paragraphs, links, images)
+- Introduction to CSS for styling HTML elements
+- Using console.log() to output messages to the browser console
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>HTML CSS Review</title>
+    <style>
+        button {
+            background-color: red;
+            color: white;
+            border: transparent;
+        }
+
+        .yellow-btn {
+            background-color: yellow;
+            color: black;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The onclick attribute is an inline JS  -->
+    <!-- This is will run after we click the button -->
+    <button class="hello-btn" title="Hello Word" onclick="
+        alert('Hello User');
+        ">hello</button>
+    <p>
+        paragraph of <button class="yellow-btn">hello</button> text.
+    </p>
+
+    <!-- The script element is an interna JS where you can put var, keywords, logic inside your HTML file -->
+    <!-- This is will run first when the page is loaded -->
+    <script>
+        alert('hello');
+    </script>
+
+</body>
+
+</html>
