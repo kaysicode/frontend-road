@@ -1,0 +1,39 @@
+<!-- 
+LESSON 4 EXERCISE
+- 1. Using HTML and CSS, try to copy the design on the attached image in the folder.
+- 2. Continuing from number 1, add onclick attributes to the two buttons:
+    - When clicking 'Add to cart', create a popup / alert() with the text 'Added'
+    - When clicking 'Buy now', displaythe message 'Loading...' in the Console, and then create a popup with the text 'Purchased'.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>LESSON 4: EXERCISE</title>
+    <style>
+        button {
+            border: black solid 2px;
+        }
+        .add-2-cart-btn {
+            background-color: yellow;
+        }
+        .buy-btn {
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <p>Adults Plain Cotton T-shirt</p>
+    <p>Price: $7.99</p>
+    <button class="add-2-cart-btn" onclick="alert('Added');">Add to cart</button>
+    <button class="buy-btn" onclick="
+        console.log('Loading...');
+        alert('Purchased');    
+    ">Buy now</button>
+</body>
+
+</html>
