@@ -10,13 +10,27 @@ LESSON LEARNED:
     2. Can't start with a number
     3. Can't use special characters except: $_0
     4. "let" lets you reassign the value of the variable later
+- The best naming practice for variables is to use descriptive names that clearly indicate their purpose.
+- Camel Case is a common convention in JavaScript where the first word is lowercase and each subsequent word starts with an uppercase letter (e.g., cartQuantity).
+- Pascal Case is another convention where each word starts with an uppercase letter (e.g., CartQuantity).
+- Kebab Case is a convention where words are separated by hyphens (e.g., cart-quantity), but this is typically used for file names and CSS classes rather than variable names in JavaScript.
+- Snake Case is a convention where words are separated by underscores (e.g., cart_quantity), but this is less common in JavaScript.
+- Use descriptive variable names to enhance code readability.
+- There are different naming conventions
+    1. Camel  (e.g. cartQuantity) = preferred in JavaScript
+    2. Pascal Case (e.g. CartQuantity) = often used for class names in JS
+    3. Kebab Case  (e.g. cart-quantity) = used for file names and CSS classes
+    4. Snake Case (e.g. cart_quantity) = less common in JS
+- "const" keyword is used for variables that should not be reassigned, while "let" is used for variables that may change.
+- "var" keyword is an older way to declare variables and is generally avoided in modern JavaScript due to its function scope behavior.
+- we can use the keyword "typeof" to check the data type of a variable.
 --> 
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Variables</title>
     <style>
 
@@ -25,17 +39,31 @@ LESSON LEARNED:
 
 <body>
 
-
     <script>
         let variable1 = 3;
         console.log(variable1);
 
-        let calculation = variable + 2;
+        let calculation = variable1 + 2;
         console.log(calculation);
         console.log(calculation + 2);
 
-        let result = calculation + 2;
+        // This should be const since we don't want to reassign it
+        // let result = calculation + 2;
+        const result = 2 + 2;
         console.log(result);
+
+        // to check the data type of a variable use typeof
+        const number = 67;
+        console.log(`The data type of number is: ${typeof number} which has a value of ${number}`);
+
+        const stringVar = "Hello World";
+        console.log(`The data type of stringVar is: ${typeof stringVar} which has a value of ${stringVar}`);
+
+        const booleanVar = true;
+        console.log(`The data type of booleanVar is: ${typeof booleanVar} which has a value of ${booleanVar}`);
+
+
+
     </script>
 </body>
 
